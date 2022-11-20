@@ -2,6 +2,31 @@
 {
 	class Plug : IInformator, ILogin
 	{
+		public void AddLesson(int Id, string title, int teacherId)
+		{
+			
+		}
+
+		public void AddTask(int Id, string title, string text, DateOnly startDate, DateOnly endDate, string regUserName)
+		{
+			
+		}
+
+		public int GetIdLesson(string title, string text)
+		{
+			return 0;
+		}
+
+		public int GetIdLesson(string title)
+		{
+			return 0;
+		}
+
+		public int GetIdTeacher(string name, string surname)
+		{
+			return 0;
+		}
+
 		public string[,] GetLessons(string group)
 		{
 			string[,] lessons = new string[1, 5];

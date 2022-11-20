@@ -13,6 +13,13 @@
 			Tasks = tasks;
 		}
 
+		public void AddTask(StudyTask task)
+		{
+			
+		}
+
+		
+
 		public override string ToString()
 		{
 			string result = "Lesson title:" + Title +

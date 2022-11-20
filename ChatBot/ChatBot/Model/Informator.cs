@@ -4,7 +4,7 @@ namespace ChatBot.Model
 {
 	static class Informator
 	{
-		private static readonly Plug plug = new Plug();
+		private static readonly Plug plug = new();
 		private static readonly IInformator informator = plug;
 		private static readonly ILogin LoginMachine = plug;
 
@@ -37,6 +37,12 @@ namespace ChatBot.Model
 			}
 			else throw new InformatorException("Group not found");
 		}
+
+		public static void AddLesson(Lesson lesson) =>
+			informator.AddLesson(
+				informator.GetIdLesson(lesson.Title), 
+				lesson.Title, 
+				informator.GetIdTeacher(lesson.Teacher.Name, lesson.Teacher.Surname));
 	}
 	class InformatorException : Exception
 	{
