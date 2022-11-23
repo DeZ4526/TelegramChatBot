@@ -1,0 +1,55 @@
+CREATE TABLE Accounts (
+	Account_id serial PRIMARY KEY,
+	Login VARCHAR ( 50 ) NOT NULL,
+	Password VARCHAR ( 50 ) NOT NULL
+);
+
+CREATE TABLE Teachers (
+	Teacher_id serial PRIMARY KEY,
+	Name VARCHAR ( 50 ) NOT NULL,
+	Surname VARCHAR ( 50 ) NOT NULL
+);
+
+CREATE TABLE Lessons (
+	Lesson_id serial PRIMARY KEY,
+	Title VARCHAR ( 50 ) NOT NULL,
+	Account_id int NOT NULL,
+	Teacher_id int NOT NULL,
+	FOREIGN KEY(Account_id) REFERENCES Accounts(Account_id),
+	FOREIGN KEY(Teacher_id) REFERENCES Teachers(Teacher_id)
+);
+
+CREATE TABLE Tasks (
+	Task_id serial PRIMARY KEY,
+	Title VARCHAR ( 50 ) NOT NULL,
+	Task_Text VARCHAR ( 250 ) NOT NULL,
+	StartDate Date NOT NULL,
+	EndDate Date NOT NULL,
+	RegUserName VARCHAR ( 50 ) NOT NULL,
+	Lesson_id int NOT NULL,
+	FOREIGN KEY(Lesson_id) REFERENCES Lessons(Lesson_id)
+);
+
+INSERT INTO Accounts (Login, Password) VALUES ('ПС191', '123'); 
+INSERT INTO Accounts (Login, Password) VALUES ('ПС221', '123'); 
+SELECT * FROM Accounts;
+
+INSERT INTO Teachers (Name, Surname) VALUES ('Иванов', 'Иванович'); 
+INSERT INTO Teachers (Name, Surname) VALUES ('Андрей', 'Андреевич'); 
+SELECT * FROM Teachers;
+
+
+INSERT INTO Lessons (Title, Account_id, Teacher_id) VALUES ('Информатика', 1, 1);
+INSERT INTO Lessons (Title, Account_id, Teacher_id) VALUES ('Информатика', 2, 1);
+INSERT INTO Lessons (Title, Account_id, Teacher_id) VALUES ('Алгебра', 1, 1);
+INSERT INTO Lessons (Title, Account_id, Teacher_id) VALUES ('Математика', 2, 1);
+INSERT INTO Lessons (Title, Account_id, Teacher_id) VALUES ('Философия', 1, 2);
+INSERT INTO Lessons (Title, Account_id, Teacher_id) VALUES ('История', 2, 2);
+SELECT * FROM Lessons;
+
+SELECT l.lesson_id, l.title, t.Name, t.surname, a.Login FROM Lessons l
+INNER JOIN Teachers t ON 
+l.Teacher_id = t.Teacher_id
+INNER JOIN Accounts a ON 
+l.Account_id = a.Account_id 
+ORDER BY l.lesson_id;

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qrXbSotZR6tH9tk1mFEKLpHYY+vxCAJTSlvTr408m5WBEbrrndgXTO4lSSenfnQdtzNsf3BZ/5V0BV7yBLV2CQ==",
+  "dgSpecHash": "znivDBhTbOJi2VDgq/f+dqKpRvB4hZVe4J7/vp16uzsq7+pCmjlWBd4+8a4HyBdun/Ax746asmZpTjpPFID1pA==",
   "success": true,
   "projectFilePath": "P:\\VisualStudio\\C#\\Git-projects\\TelegramChatBot\\ChatBot\\ChatBot\\ChatBot.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Даниил\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Даниил\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
+    "C:\\Users\\Даниил\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
   ],
   "logs": []

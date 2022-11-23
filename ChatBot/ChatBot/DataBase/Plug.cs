@@ -12,10 +12,6 @@
 			
 		}
 
-		public int GetIdLesson(string title, string text)
-		{
-			return 0;
-		}
 
 		public int GetIdLesson(string title)
 		{
