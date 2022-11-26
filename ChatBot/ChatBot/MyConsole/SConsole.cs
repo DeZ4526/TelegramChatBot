@@ -21,7 +21,7 @@ namespace ChatBot.MyConsole
 			WriteLine(message, args);
 			Console.ResetColor();
 		}
-		public static void WriteLine(string message, object? args)
+		public static void WriteLine(string message, object? args = null)
 		{
 			Console.WriteLine('[' + DateTime.Now.ToString() + "] - " + message, args);
 		}

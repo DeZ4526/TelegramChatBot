@@ -16,3 +16,5 @@ P:\VisualStudio\C#\Git-projects\TelegramChatBot\ChatBot\ChatBot\obj\Debug\net6.0
 P:\VisualStudio\C#\Git-projects\TelegramChatBot\ChatBot\ChatBot\bin\Debug\net6.0\Newtonsoft.Json.dll
 P:\VisualStudio\C#\Git-projects\TelegramChatBot\ChatBot\ChatBot\bin\Debug\net6.0\Telegram.Bot.dll
 P:\VisualStudio\C#\Git-projects\TelegramChatBot\ChatBot\ChatBot\obj\Debug\net6.0\ChatBot.csproj.CopyComplete
+P:\VisualStudio\C#\Git-projects\TelegramChatBot\ChatBot\ChatBot\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+P:\VisualStudio\C#\Git-projects\TelegramChatBot\ChatBot\ChatBot\bin\Debug\net6.0\Npgsql.dll

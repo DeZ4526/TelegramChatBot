@@ -4,11 +4,11 @@
 	{
 		public readonly string Title;
 		public readonly string Text;
-		public readonly DateOnly StartDate;
-		public readonly DateOnly EndDate;
+		public readonly DateTime StartDate;
+		public readonly DateTime EndDate;
 		public readonly string RegUserName;
 
-		public StudyTask(string title, string text, DateOnly startDate, DateOnly endDate, string regUserName)
+		public StudyTask(string title, string text, DateTime startDate, DateTime endDate, string regUserName)
 		{
 			Title = title;
 			Text = text;
